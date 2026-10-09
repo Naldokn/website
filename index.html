@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===== SEO: Titel & Beschreibung (DEMO-Werte – später anpassen) ===== -->
+  <title>Muster &amp; Service – Allround-Service für Haus, Garten &amp; Grundstück | Musterstadt</title>
+  <meta name="description" content="Muster &amp; Service: Gartenpflege, Renovierung, Hausmeisterservice, Entrümpelung, Montage, Reinigung und Winterdienst aus einer Hand. Demo-Website mit Platzhalterdaten.">
+  <!-- DEMO-SEITE: verhindert die Aufnahme bei Google. VOR DEM LIVEGANG diese Zeile entfernen! -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Später durch die echte Domain ersetzen -->
+  <link rel="canonical" href="https://www.example.com/">
+  <meta name="theme-color" content="#2f6b4f">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <!-- ===== Open Graph (Vorschau beim Teilen in WhatsApp, Facebook & Co.) ===== -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Muster &amp; Service">
+  <meta property="og:title" content="Muster &amp; Service – Allround-Service für Haus, Garten &amp; Grundstück">
+  <meta property="og:description" content="Gartenpflege, Renovierung, Hausmeisterservice, Entrümpelung, Montage, Winterdienst und mehr – zuverlässig aus einer Hand. (Demo-Website)">
+  <meta property="og:url" content="https://www.example.com/">
+  <meta property="og:image" content="https://www.example.com/assets/images/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Hero-Bild vorladen = schnellerer Seitenaufbau -->
+  <link rel="preload" as="image" href="assets/images/hero-01.jpg">
+
+  <!-- ===== Structured Data (LocalBusiness) – wird von script.js automatisch
+       mit den Daten aus websiteData aktualisiert. Werte hier = Fallback. ===== -->
+  <script type="application/ld+json" id="structured-data">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Muster & Service",
+    "description": "Allround-Dienstleister für Haus, Garten und Grundstück (Demo-Daten).",
+    "url": "https://www.example.com/",
+    "telephone": "01234 567890",
+    "email": "info@muster-service.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Musterstraße 12",
+      "postalCode": "49000",
+      "addressLocality": "Musterstadt",
+      "addressCountry": "DE"
+    },
+    "openingHours": "Mo-Fr 08:00-18:00"
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Markiert, dass JavaScript aktiv ist (für Einblend-Animationen) -->
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header site-header--transparent">
+    <div class="container header-inner">
+      <a class="brand" href="#start" aria-label="Zur Startseite">
+        <span class="brand-mark" aria-hidden="true"><span data-icon="logo"></span></span>
+        <span class="brand-name" data-bind="companyName">Muster &amp; Service</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#start">Startseite</a></li>
+          <li><a class="nav-link" href="#leistungen">Leistungen</a></li>
+          <li><a class="nav-link" href="#arbeiten">Arbeiten</a></li>
+          <li><a class="nav-link" href="#ueber-uns">Über uns</a></li>
+          <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
+        </ul>
+        <a class="btn btn--primary nav-cta" href="#kontakt">Angebot anfragen</a>
+        <div class="nav-contact-mobile">
+          <p>Rufen Sie uns an:<br><a href="tel:01234567890" data-href="tel" data-bind="phone">01234 567890</a></p>
+          <p><span data-bind="openingHours">Mo–Fr: 08:00–18:00 Uhr</span></p>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= 1. HERO ================= -->
+    <section id="start" class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <!-- Hintergrundbild: wird über websiteData.heroImage gesteuert -->
+        <img src="assets/images/hero-01.jpg" data-bind-src="heroImage" data-bind-alt="heroImageAlt"
+             alt="Gepflegtes Grundstück mit Garten (Platzhalterbild)" width="1920" height="1080" fetchpriority="high" decoding="async">
+      </div>
+      <div class="container">
+        <div class="hero-content">
+          <p class="eyebrow" data-bind="heroEyebrow">Allround-Service aus Musterstadt</p>
+          <h1 id="hero-title"><span data-bind="companyName">Muster &amp; Service</span></h1>
+          <p class="hero-lead"><strong data-bind="slogan">Zuverlässige Lösungen rund um Haus, Garten und Grundstück.</strong>
+            <span data-bind="heroText">Vom Rasenschnitt über die Renovierung bis zum Winterdienst: Wir erledigen anfallende Arbeiten sauber, pünktlich und zu fairen Preisen – alles aus einer Hand.</span></p>
+          <div class="btn-group">
+            <a class="btn btn--primary" href="#leistungen">Dienstleistungen entdecken <span data-icon="arrowRight"></span></a>
+            <a class="btn btn--ghost-light" href="#kontakt">Kontakt aufnehmen</a>
+          </div>
+          <ul class="hero-facts" aria-label="Kurz zusammengefasst">
+            <li><span data-icon="checkSm"></span> Viele Leistungen aus einer Hand</li>
+            <li><span data-icon="checkSm"></span> Privat &amp; Gewerbe</li>
+            <li><span data-icon="checkSm"></span> Kostenloses Angebot</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 2. ÜBER UNS / KURZE VORSTELLUNG ================= -->
+    <section id="ueber-uns" class="section" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <p class="eyebrow">Über uns</p>
+          <h2 id="about-title" data-bind="aboutTitle">Ihr zuverlässiger Partner für vielseitige Arbeiten</h2>
+          <p data-bind="aboutText">Muster &amp; Service ist Ihr Ansprechpartner, wenn rund um Haus, Garten und Grundstück etwas zu tun ist.</p>
+          <p data-bind="aboutText2">Statt für jede Kleinigkeit einen anderen Betrieb zu beauftragen, bekommen Sie bei uns viele Leistungen aus einer Hand.</p>
+          <ul class="check-list">
+            <li><span data-icon="check"></span><span>Fester Ansprechpartner: <strong data-bind="owner">Max Mustermann</strong></span></li>
+            <li><span data-icon="check"></span><span>Einsatzgebiet: <span data-bind="serviceArea">Musterstadt und Umgebung</span></span></li>
+            <li><span data-icon="check"></span><span>Für Privatkunden, Vermieter, Hausverwaltungen und Gewerbe</span></li>
+          </ul>
+          <a class="btn btn--outline" href="#kontakt">Persönlich kennenlernen</a>
+        </div>
+        <figure class="about-media reveal" style="--delay:.1s">
+          <img src="assets/images/ueber-uns-01.jpg" data-bind-src="aboutImage" data-bind-alt="aboutImageAlt"
+               alt="Mitarbeiter bei der Arbeit (Platzhalterbild)" width="900" height="1200" loading="lazy" decoding="async">
+          <figcaption class="about-badge">
+            <span><strong data-bind="experienceYears">10+</strong><span data-bind="experienceLabel">Jahre Erfahrung</span></span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 3. DIENSTLEISTUNGEN =================
+         Die Karten werden automatisch aus der Liste "services" erzeugt. -->
+    <section id="leistungen" class="section section--soft" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Leistungen</p>
+          <h2 id="services-title">Viele Aufgaben – ein Ansprechpartner</h2>
+          <p>Ob drinnen oder draußen, einmalig oder regelmäßig: Wir übernehmen die unterschiedlichsten Arbeiten rund um Ihre Immobilie.</p>
+        </div>
+        <div id="services-grid" class="services-grid">
+          <noscript><p class="noscript-hint">Bitte aktivieren Sie JavaScript, um alle Leistungen anzuzeigen.</p></noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. UNSERE ARBEITEN / REFERENZEN =================
+         Projekte und Filter werden automatisch aus der Liste "projects" erzeugt. -->
+    <section id="arbeiten" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Referenzen</p>
+          <h2 id="projects-title">Unsere Arbeiten</h2>
+          <p>Ein Auszug aus erledigten Aufträgen. Beim ersten Projekt können Sie den Regler ziehen und Vorher und Nachher vergleichen.</p>
+        </div>
+        <div id="project-filter" class="filter-bar" role="group" aria-label="Projekte nach Kategorie filtern"></div>
+        <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ================= 5. VIDEOS =================
+         Videos werden automatisch aus der Liste "videos" erzeugt. -->
+    <section id="videos" class="section section--dark" aria-labelledby="videos-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Videos</p>
+          <h2 id="videos-title">Einblicke in unsere Arbeit</h2>
+          <p>Kurze Projektvideos zeigen, wie wir arbeiten – vom ersten Handgriff bis zum fertigen Ergebnis.</p>
+        </div>
+        <div id="videos-grid" class="videos-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= 6. GALERIE =================
+         Bilder werden automatisch aus der Liste "galleryImages" erzeugt. -->
+    <section id="galerie" class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Galerie</p>
+          <h2 id="gallery-title">Eindrücke aus dem Alltag</h2>
+          <p>Klicken Sie auf ein Bild, um es groß anzusehen.</p>
+        </div>
+        <div id="gallery-grid" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= 7. WARUM WIR? ================= -->
+    <section id="vorteile" class="section section--soft" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Warum wir?</p>
+          <h2 id="benefits-title">Darauf können Sie sich verlassen</h2>
+        </div>
+        <div id="benefits-grid" class="benefits-grid"></div>
+      </div>
+    </section>
+
+    <!-- ================= 8. ABLAUF ================= -->
+    <section id="ablauf" class="section" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-head section-head--center reveal">
+          <p class="eyebrow">Ablauf</p>
+          <h2 id="steps-title">So läuft es ab</h2>
+          <p>In fünf einfachen Schritten zur erledigten Arbeit.</p>
+        </div>
+        <ol id="steps-list" class="steps"></ol>
+      </div>
+    </section>
+
+    <!-- ================= 9. KONTAKT ================= -->
+    <section id="kontakt" class="section section--soft" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Kontakt</p>
+          <h2 id="contact-title">Wie können wir Ihnen helfen?</h2>
+          <p>Rufen Sie an, schreiben Sie uns oder nutzen Sie das Formular. Wir melden uns schnellstmöglich mit einem unverbindlichen Angebot.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Kontaktdaten -->
+          <div class="contact-card reveal">
+            <h3 data-bind="companyName">Muster &amp; Service</h3>
+            <p class="contact-person">Ansprechpartner: <span data-bind="owner">Max Mustermann</span></p>
+            <ul class="contact-list">
+              <li><span class="ci" data-icon="pin"></span>
+                <div><small>Adresse</small><span class="v"><span data-bind="street">Musterstraße 12</span><br><span data-bind="zipCity">49000 Musterstadt</span></span></div></li>
+              <li><span class="ci" data-icon="phone"></span>
+                <div><small>Telefon</small><a href="tel:01234567890" data-href="tel" data-bind="phone">01234 567890</a></div></li>
+              <li><span class="ci" data-icon="mail"></span>
+                <div><small>E-Mail</small><a href="mailto:info@muster-service.de" data-href="mailto" data-bind="email">info@muster-service.de</a></div></li>
+              <li><span class="ci" data-icon="clock"></span>
+                <div><small>Öffnungszeiten</small><span class="v" data-bind="openingHours">Mo–Fr: 08:00–18:00 Uhr</span></div></li>
+            </ul>
+            <div class="contact-actions">
+              <a class="btn btn--light" href="tel:01234567890" data-href="tel"><span data-icon="phone"></span> Jetzt anrufen</a>
+              <a class="btn btn--ghost-light" href="mailto:info@muster-service.de" data-href="mailto"><span data-icon="mail"></span> E-Mail schreiben</a>
+              <a class="btn btn--whatsapp" href="#" data-href="whatsapp" target="_blank" rel="noopener"><span data-icon="chat"></span> WhatsApp <span class="visually-hidden">(öffnet in neuem Fenster)</span></a>
+            </div>
+          </div>
+
+          <!-- Kontaktformular (DEMO – versendet keine Daten) -->
+          <div class="form-card reveal" style="--delay:.1s">
+            <div class="demo-note" role="note">
+              <span data-icon="info"></span>
+              <p><strong>Demo-Formular:</strong> Es werden keine Daten übertragen oder gespeichert.</p>
+            </div>
+            <form id="contact-form" novalidate aria-describedby="form-hint">
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="cf-name">Name <span class="req" aria-hidden="true">*</span></label>
+                  <input id="cf-name" name="name" type="text" autocomplete="name" required aria-describedby="err-name">
+                  <span class="field-error" id="err-name" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                  <label for="cf-email">E-Mail <span class="req" aria-hidden="true">*</span></label>
+                  <input id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="err-email">
+                  <span class="field-error" id="err-email" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                  <label for="cf-phone">Telefonnummer</label>
+                  <input id="cf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="err-phone">
+                  <span class="field-error" id="err-phone" aria-live="polite"></span>
+                </div>
+                <div class="form-field">
+                  <label for="cf-service">Gewünschte Leistung</label>
+                  <!-- Optionen werden automatisch aus "services" erzeugt -->
+                  <select id="cf-service" name="service">
+                    <option value="">Bitte auswählen (optional)</option>
+                  </select>
+                </div>
+                <div class="form-field form-field--full">
+                  <label for="cf-message">Nachricht <span class="req" aria-hidden="true">*</span></label>
+                  <textarea id="cf-message" name="message" rows="5" required aria-describedby="err-message"
+                            placeholder="Was dürfen wir für Sie erledigen? Gerne mit Ort, Umfang und Wunschtermin."></textarea>
+                  <span class="field-error" id="err-message" aria-live="polite"></span>
+                </div>
+                <div class="form-field form-field--full">
+                  <label class="checkbox" for="cf-privacy">
+                    <input id="cf-privacy" name="privacy" type="checkbox" required aria-describedby="err-privacy">
+                    <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Bearbeitung der Anfrage einverstanden. <span class="req" aria-hidden="true">*</span></span>
+                  </label>
+                  <span class="field-error" id="err-privacy" aria-live="polite"></span>
+                </div>
+                <div class="form-field form-field--full">
+                  <button class="btn btn--primary btn--block" type="submit">Anfrage senden <span data-icon="arrowRight"></span></button>
+                </div>
+                <p class="form-hint form-field--full" id="form-hint">Felder mit <span aria-hidden="true">*</span> sind Pflichtfelder.</p>
+                <div id="form-status" class="form-status form-field--full" role="status" tabindex="-1"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#start">
+            <span class="brand-mark" aria-hidden="true"><span data-icon="logo"></span></span>
+            <span class="brand-name" data-bind="companyName">Muster &amp; Service</span>
+          </a>
+          <p data-bind="shortDescription">Ihr Allround-Dienstleister für Haus, Garten, Grundstück und vieles mehr – zuverlässig, flexibel und persönlich.</p>
+        </div>
+
+        <nav aria-label="Footer-Navigation">
+          <h3>Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="#start">Startseite</a></li>
+            <li><a href="#leistungen">Dienstleistungen</a></li>
+            <li><a href="#arbeiten">Arbeiten</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Rechtliches">
+          <h3>Rechtliches</h3>
+          <ul class="footer-links">
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="copyright.html">Copyright</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h3>Kontakt</h3>
+          <address class="footer-contact">
+            <span data-bind="street">Musterstraße 12</span>
+            <span data-bind="zipCity">49000 Musterstadt</span>
+            <a href="tel:01234567890" data-href="tel" data-bind="phone">01234 567890</a>
+            <a href="mailto:info@muster-service.de" data-href="mailto" data-bind="email">info@muster-service.de</a>
+            <span data-bind="openingHours">Mo–Fr: 08:00–18:00 Uhr</span>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-bind="year">2026</span> <span data-bind="companyName">Muster &amp; Service</span>. Alle Rechte vorbehalten.</p>
+        <ul>
+          <li><a href="impressum.html">Impressum</a></li>
+          <li><a href="datenschutz.html">Datenschutz</a></li>
+          <li><a href="copyright.html">Copyright</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" type="button" aria-label="Nach oben scrollen"><span data-icon="arrowUp"></span></button>
+
+  <!-- ================= LIGHTBOX (große Bildansicht der Galerie) ================= -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Bildansicht" aria-hidden="true">
+    <div class="lightbox-top">
+      <span class="lightbox-counter" aria-live="polite"></span>
+      <button class="lb-btn lb-close" type="button" aria-label="Bildansicht schließen (ESC)"><span data-icon="close"></span></button>
+    </div>
+    <div class="lightbox-stage">
+      <button class="lb-btn lb-prev" type="button" aria-label="Vorheriges Bild"><span data-icon="chevLeft"></span></button>
+      <img src="data:," alt="">
+      <button class="lb-btn lb-next" type="button" aria-label="Nächstes Bild"><span data-icon="chevRight"></span></button>
+    </div>
+    <p class="lightbox-caption" aria-live="polite"></p>
+  </div>
+
+  <!-- Inhalte der Website (Firmendaten, Leistungen, Projekte, Bilder, Videos) -->
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>

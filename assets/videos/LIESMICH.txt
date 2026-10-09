@@ -1,0 +1,10 @@
+Eigene Videos hier ablegen (z. B. gartenpflege.mp4).
+
+Danach in data.js (bzw. in index-editable.html) bei "videos" eintragen:
+    type: "file",
+    src:  "assets/videos/gartenpflege.mp4",
+
+Tipps:
+- Format MP4 (H.264), 720p oder 1080p
+- Möglichst kurz halten (unter ca. 20 MB pro Video)
+- Für große/lange Videos lieber YouTube nutzen (type: "youtube")
