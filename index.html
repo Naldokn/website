@@ -3,37 +3,105 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101712">
-  <meta name="description" content="Knott Allroundservice – unsere Website entsteht gerade. Wir sind bald für Sie da.">
-  <title>Knott Allroundservice – Bald für Sie da</title>
+  <meta name="theme-color" content="#f6f5ef">
+  <meta name="description" content="Knott Allroundservice – unsere neue Website ist bald für Sie da.">
+  <title>Knott Allroundservice | Bald online</title>
   <style>
-    :root{color-scheme:dark;--ink:#f5f5ed;--muted:#b9c0b5;--green:#c4ef76;--deep:#101712;--line:rgba(245,245,237,.14)}
-    *{box-sizing:border-box}html{min-height:100%;background:var(--deep)}
-    body{min-height:100vh;margin:0;overflow-x:hidden;color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 76% 18%,rgba(114,153,74,.18),transparent 34rem),radial-gradient(ellipse at 12% 90%,rgba(74,110,75,.16),transparent 30rem),linear-gradient(135deg,#101712 0%,#18221a 55%,#111a14 100%)}
-    body:before{position:fixed;inset:0;z-index:0;pointer-events:none;content:"";opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
-    a{color:inherit}.page{position:relative;z-index:1;display:flex;min-height:100vh;flex-direction:column;padding:30px clamp(22px,6vw,88px) 25px}
-    header,footer{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none}.brand-mark{display:grid;width:42px;height:42px;place-items:center;border:1px solid rgba(196,239,118,.45);border-radius:13px;color:var(--green);font-size:17px;font-weight:800;letter-spacing:-.08em;transform:rotate(-4deg)}.brand-name{font-size:13px;font-weight:750;letter-spacing:.08em;line-height:1.3;text-transform:uppercase}.brand-name span{display:block;color:var(--muted);font-size:10px;font-weight:550;letter-spacing:.2em}
-    .status{display:inline-flex;align-items:center;gap:9px;color:var(--muted);font-size:11px;letter-spacing:.13em;text-transform:uppercase}.status:before{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 15px rgba(196,239,118,.8);content:"";animation:blink 2.2s ease-in-out infinite}
-    main{display:grid;flex:1;align-items:center;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);gap:clamp(40px,8vw,120px);width:min(1120px,100%);margin:0 auto;padding:72px 0}.copy{animation:rise .8s .08s both}.eyebrow{display:flex;align-items:center;gap:12px;margin:0 0 23px;color:var(--green);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}.eyebrow:before{width:32px;height:1px;background:var(--green);content:""}
-    h1{max-width:680px;margin:0;font-size:clamp(52px,8vw,100px);font-weight:650;letter-spacing:-.075em;line-height:.96}h1 span{color:var(--green)}.intro{max-width:480px;margin:29px 0 0;color:var(--muted);font-size:clamp(16px,1.7vw,19px);line-height:1.7}
-    .cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:18px;margin-top:35px}.instagram{display:inline-flex;min-height:54px;align-items:center;justify-content:center;gap:11px;padding:0 21px;border:1px solid var(--green);border-radius:999px;background:var(--green);color:#172012;font-size:14px;font-weight:750;text-decoration:none;transition:transform .2s ease,background .2s ease,box-shadow .2s ease}.instagram:hover{transform:translateY(-3px);background:#d5f79b;box-shadow:0 12px 35px rgba(196,239,118,.18)}.instagram:focus-visible{outline:3px solid white;outline-offset:4px}.instagram svg{width:18px;height:18px}.cta-note{color:var(--muted);font-size:12px}
-    .visual{position:relative;display:grid;min-height:390px;place-items:center;animation:rise .9s .2s both}.orbit{position:absolute;width:min(78vw,390px);aspect-ratio:1;border:1px solid rgba(196,239,118,.13);border-radius:50%;animation:rotate 42s linear infinite}.orbit:before,.orbit:after{position:absolute;width:8px;height:8px;border-radius:50%;background:var(--green);content:"";box-shadow:0 0 18px rgba(196,239,118,.65)}.orbit:before{top:13%;left:21%}.orbit:after{right:8%;bottom:32%;width:5px;height:5px;opacity:.65}.logo-card{position:relative;width:min(78vw,360px);overflow:hidden;border:1px solid rgba(245,245,237,.18);border-radius:24px;background:#fff;box-shadow:0 30px 100px rgba(0,0,0,.28);animation:float 5s ease-in-out infinite}.logo-card img{display:block;width:100%;height:auto}.spark{position:absolute;color:var(--green);font-size:17px;opacity:.8;animation:twinkle 3s ease-in-out infinite}.spark.one{top:17%;right:13%}.spark.two{bottom:17%;left:10%;animation-delay:1.3s}
-    footer{padding-top:22px;border-top:1px solid var(--line);color:rgba(185,192,181,.75);font-size:11px}footer a{color:var(--muted);text-decoration:none}footer a:hover{color:var(--green)}
-    @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}@keyframes float{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-9px) rotate(0)}}@keyframes rotate{to{transform:rotate(360deg)}}@keyframes blink{50%{opacity:.45;box-shadow:0 0 5px rgba(196,239,118,.35)}}@keyframes twinkle{50%{opacity:.25;transform:scale(.75)}}
-    @media(max-width:760px){.page{padding:23px 22px 18px}main{grid-template-columns:1fr;gap:12px;padding:58px 0 45px}.visual{min-height:310px;grid-row:1}.orbit{width:min(74vw,300px)}.logo-card{width:min(76vw,310px);border-radius:20px}h1{font-size:clamp(52px,13vw,78px)}.copy{text-align:center}.eyebrow,.cta-row{justify-content:center}.eyebrow:before{display:none}.intro{margin-right:auto;margin-left:auto}footer{align-items:flex-start}}
-    @media(max-width:420px){.status{font-size:9px;letter-spacing:.08em}.brand-name{font-size:11px}.brand-mark{width:37px;height:37px}.cta-row{gap:12px}.cta-note{width:100%}footer{gap:12px;font-size:10px}}
-    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+    :root {
+      color-scheme: light;
+      --paper: #f6f5ef;
+      --ink: #20251e;
+      --muted: #656a60;
+      --green: #4b9700;
+      --green-dark: #315f10;
+      --rule: #d9dbd1;
+      --soft-green: #e8ecdf;
+    }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--paper); }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .site { display: flex; min-height: 100vh; flex-direction: column; }
+    .wrap { width: min(1180px, calc(100% - 64px)); margin-inline: auto; }
+    header { border-bottom: 1px solid var(--rule); }
+    .header-inner { display: flex; min-height: 88px; align-items: center; justify-content: space-between; gap: 24px; }
+    .wordmark { text-decoration: none; line-height: 1; }
+    .wordmark strong { display: block; font-size: 23px; font-weight: 800; letter-spacing: .02em; }
+    .wordmark span { display: block; margin-top: 5px; font-size: 10px; font-weight: 700; letter-spacing: .19em; text-transform: uppercase; }
+    .header-note { display: flex; align-items: center; gap: 10px; color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .header-note::before { width: 8px; height: 8px; background: var(--green); content: ""; }
+    main { display: grid; flex: 1; grid-template-columns: 1fr 1fr; align-items: center; gap: clamp(48px, 8vw, 110px); padding-block: clamp(56px, 9vh, 100px); }
+    .copy { max-width: 570px; }
+    .eyebrow { margin: 0 0 25px; color: var(--green-dark); font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { max-width: 600px; margin: 0; font-size: clamp(54px, 7.3vw, 88px); font-weight: 800; letter-spacing: -.065em; line-height: .98; }
+    h1 span { color: var(--green); }
+    .intro { max-width: 460px; margin: 26px 0 0; color: var(--muted); font-size: clamp(17px, 1.7vw, 20px); line-height: 1.65; }
+    .instagram { display: inline-flex; min-height: 52px; align-items: center; gap: 12px; margin-top: 32px; padding: 0 19px; background: var(--green-dark); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; transition: background-color .18s ease; }
+    .instagram:hover { background: #24470b; }
+    .instagram:focus-visible { outline: 3px solid var(--green); outline-offset: 4px; }
+    .instagram svg { width: 18px; height: 18px; }
+    .visual { display: grid; min-height: 340px; place-items: center; padding: 24px; background: var(--soft-green); }
+    .visual img { display: block; width: min(100%, 440px); height: auto; }
+    footer { border-top: 1px solid var(--rule); }
+    .footer-inner { display: flex; min-height: 66px; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
+    footer a { text-decoration: none; }
+    footer a:hover { color: var(--green-dark); text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 760px) {
+      .wrap { width: min(100% - 40px, 560px); }
+      .header-inner { min-height: 76px; }
+      .wordmark strong { font-size: 20px; }
+      .header-note { font-size: 10px; }
+      main { grid-template-columns: 1fr; gap: 36px; padding-block: 48px; }
+      .copy { order: 1; }
+      .visual { order: 0; min-height: 260px; }
+      h1 { font-size: clamp(52px, 13vw, 76px); }
+      .intro { margin-top: 20px; }
+      .instagram { margin-top: 25px; }
+    }
+    @media (max-width: 420px) {
+      .wrap { width: calc(100% - 32px); }
+      .header-inner { gap: 12px; }
+      .wordmark strong { font-size: 18px; }
+      .wordmark span { font-size: 9px; }
+      .header-note { gap: 7px; font-size: 9px; letter-spacing: .04em; }
+      .visual { min-height: 220px; padding: 16px; }
+      .footer-inner { font-size: 10px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
   </style>
 </head>
 <body>
-  <div class="page">
-    <header><a class="brand" href="#start" aria-label="Knott Allroundservice – Startseite"><span class="brand-mark" aria-hidden="true">K.</span><span class="brand-name">Knott <span>Allroundservice</span></span></a><span class="status">Wir bauen für Sie</span></header>
-    <main id="start">
-      <section class="copy" aria-labelledby="headline"><p class="eyebrow">Hier entsteht etwas Neues</p><h1 id="headline">Wir sind<br>bald <span>da.</span></h1><p class="intro">Unsere Website bekommt gerade den letzten Schliff. Knott Allroundservice ist schon bald online – bis dahin freuen wir uns, von Ihnen auf Instagram zu hören.</p><div class="cta-row"><a class="instagram" href="https://www.instagram.com/knott.allroundservice/" target="_blank" rel="noopener noreferrer" aria-label="Knott Allroundservice auf Instagram öffnen"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.6" r="1.2" fill="currentColor"/></svg>@knott.allroundservice</a><span class="cta-note">Folgen Sie uns für Neuigkeiten</span></div></section>
-      <div class="visual" aria-hidden="true"><div class="orbit"></div><span class="spark one">✳</span><span class="spark two">✦</span><div class="logo-card"><img src="assets/images/Bildschirmfoto%202026-10-18%20um%2021.18.49.png" alt="Knott Allroundservice – zuverlässig, sauber, alles aus einer Hand"></div></div>
+  <div class="site">
+    <header>
+      <div class="wrap header-inner">
+        <a class="wordmark" href="#start" aria-label="Knott Allroundservice – Startseite"><strong>KNOTT</strong><span>Allroundservice</span></a>
+        <span class="header-note">Website im Aufbau</span>
+      </div>
+    </header>
+    <main class="wrap" id="start">
+      <section class="copy" aria-labelledby="headline">
+        <p class="eyebrow">Zuverlässig. Sauber. Alles aus einer Hand.</p>
+        <h1 id="headline">Wir machen<br>unsere Seite<br><span>schön für Sie.</span></h1>
+        <p class="intro">Wir arbeiten gerade an unserem neuen Internetauftritt. Schon bald finden Sie hier mehr über Knott Allroundservice. Bis dahin sind wir auf Instagram für Sie da.</p>
+        <a class="instagram" href="https://www.instagram.com/knott.allroundservice/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.6" cy="6.6" r="1.2" fill="currentColor"/></svg>
+          @knott.allroundservice
+        </a>
+      </section>
+      <div class="visual">
+        <img src="assets/images/Bildschirmfoto%202026-10-18%20um%2021.18.49.png" alt="Knott Allroundservice – zuverlässig, sauber, alles aus einer Hand">
+      </div>
     </main>
-    <footer><span>© <span id="year">2026</span> Knott Allroundservice</span><a href="https://www.instagram.com/knott.allroundservice/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></footer>
+    <footer>
+      <div class="wrap footer-inner"><span>© 2026 Knott Allroundservice</span><a href="https://www.instagram.com/knott.allroundservice/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></div>
+    </footer>
   </div>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
