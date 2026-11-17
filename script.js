@@ -621,8 +621,8 @@
                 name: name,
                 email: f.email.value.trim(),
                 "Telefon": f.phone.value.trim() || "-",
-                "Gewünschte Leistung": service,
-                "Kostenlose Besichtigung": visit ? "ja" : "nein",
+                "Leistung": service,
+                "Besichtigung": visit ? "ja, kostenlose Besichtigung gewünscht" : "nein",
                 message: f.message.value.trim(),
                 botcheck: f.botcheck && f.botcheck.checked ? true : ""
             };
