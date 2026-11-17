@@ -59,7 +59,7 @@ const websiteData = {
     whatsapp: "491736363684",           // nur Ziffern, mit Ländervorwahl ohne "+" – leer lassen ("") blendet den WhatsApp-Button aus
     // Kontaktformular: Zugangsschlüssel von web3forms.com (für info@knottallroundservice.de erstellt).
     // Leer lassen ("") = das Formular öffnet stattdessen das E-Mail-Programm des Besuchers.
-    formAccessKey: "",
+    formAccessKey: "19ebf14d-cb1e-4b36-a01d-22dec16dacd1",
     openingHours: "Mo–Sa: 07:00–17:00 Uhr",
     openingHoursSchema: "Mo-Sa 07:00-17:00", // gleiche Zeiten im Google-Format (für Structured Data)
 
